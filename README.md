@@ -6,10 +6,12 @@ Docker Version from https://github.com/jdrews/logstation.
 ```
 logstation {
     # Windows example of setting up logs
-    logs=["/log/messages","/log/daemon.log"]
+    # logs=["C:\\git\\logstation\\test\\logfile.log","C:\\git\\logstation\\test\\logfile2.log"]
+        
     # Unix example of setting up logs
     # logs=["/home/jdrews/git/logstation/logfile.log","/home/jdrews/git/logstation/logfile2.log"]
-
+    logs=["/log/messages","/log/daemon.log"]
+    
     # Setup your syntax below
     # <some-name>=[<RGB_HEX>,<regex-for-line-matching>]
     # matching gives priority to the top most
