@@ -41,7 +41,7 @@ logstation {
 }
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 ```
 version: '2'
 
@@ -59,6 +59,10 @@ services:
 ```
 ### docker run 
 ```
-docker run  -d  -p 8884:8884 -v /var/log:/log -v /docker/logstation/logstation.conf:/logstation/logstation.conf  --name log logstation
+docker run  -d  -p 8884:8884 -v /var/log:/log -v /docker/logstation/logstation.conf:/logstation/logstation.conf  --name logstation pipp37/logstation
 ```
-
+## Raspberry Pi - armhf
+For arm platform use *pipp37/logstation-rpi*
+```
+docker run  -d  -p 8884:8884 -v /var/log:/log -v /docker/logstation/logstation.conf:/logstation/logstation.conf  --name logstation pipp37/logstation-rpi
+```
